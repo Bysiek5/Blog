@@ -1,0 +1,39 @@
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-light-text;
+    font-weight: 300;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+
+    
+    &__primary {
+        font-size: 1000%;
+        height: 80vh;
+        
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 800%;
+        }
+        
+        @media only screen and (max-width: $bp-small) {
+            font-size: 550%;
+        }
+        
+        @media only screen and (max-width: $bp-super-smallest) {
+            text-align: center;
+            font-size: 500%;
+        }
+    }
+    
+    &__secondary {
+        color: $color-dark-text;
+        font-size: 400%;
+    }
+}
+
+.text {
+    color: $color-dark-text;
+    font-size: 170%;
+    margin: 0 10rem;
+}

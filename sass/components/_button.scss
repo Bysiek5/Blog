@@ -1,0 +1,46 @@
+.airbnb {
+    background-color: #fd5c63;
+    border-radius: 5px;
+    font-size: 200%;
+    padding: .5rem;
+    margin: 0 2rem;
+}
+
+.booking {
+    background-color: #003580;
+    border-radius: 5px;
+    font-size: 200%;
+    padding: .5rem;
+}
+
+.airbnb,
+.booking {
+        @media only screen and (max-width: $bp-large) {
+        font-size: 160%;
+    }
+        @media only screen and (max-width: $bp-medium) {
+        margin-top: 1rem;
+    }
+    
+        @media only screen and (max-width: $bp-smallest) {
+        font-size: 115%;
+    }
+    
+        @media only screen and (max-width: $bp-super-smallest) {
+        font-size: 80%;
+    }
+    
+}
+
+.instagram {
+    font-size: 430%;
+}
+
+.airbnb,
+.booking,
+.instagram {
+    @media only screen and (max-width: $bp-medium) {
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,181 @@
+/*
+0 - 600px        Phone
+600 - 900px      Tablet portrait
+900 - 1200px     Tablet landscape
+1200 - 1800px    Normal desktop
+1800px+          Big-desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  color: #f9f7f6;
+  background-color: #f4f4f4;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 300;
+  word-spacing: 2px;
+  letter-spacing: 1px; }
+  .heading__primary {
+    font-size: 1000%;
+    height: 80vh; }
+    @media only screen and (max-width: 50em) {
+      .heading__primary {
+        font-size: 800%; } }
+    @media only screen and (max-width: 37.5em) {
+      .heading__primary {
+        font-size: 550%; } }
+    @media only screen and (max-width: 23.4375em) {
+      .heading__primary {
+        text-align: center;
+        font-size: 500%; } }
+  .heading__secondary {
+    color: #000;
+    font-size: 400%; }
+
+.text {
+  color: #000;
+  font-size: 170%;
+  margin: 0 10rem; }
+
+.airbnb {
+  background-color: #fd5c63;
+  border-radius: 5px;
+  font-size: 200%;
+  padding: .5rem;
+  margin: 0 2rem; }
+
+.booking {
+  background-color: #003580;
+  border-radius: 5px;
+  font-size: 200%;
+  padding: .5rem; }
+
+@media only screen and (max-width: 62.5em) {
+  .airbnb,
+  .booking {
+    font-size: 160%; } }
+
+@media only screen and (max-width: 50em) {
+  .airbnb,
+  .booking {
+    margin-top: 1rem; } }
+
+@media only screen and (max-width: 28.25em) {
+  .airbnb,
+  .booking {
+    font-size: 115%; } }
+
+@media only screen and (max-width: 23.4375em) {
+  .airbnb,
+  .booking {
+    font-size: 80%; } }
+
+.instagram {
+  font-size: 430%; }
+
+@media only screen and (max-width: 50em) {
+  .airbnb,
+  .booking,
+  .instagram {
+    display: flex;
+    justify-content: center; } }
+
+.welcome__section {
+  background-image: url(../../img/tlo.jpg);
+  background-size: cover;
+  height: 100vh; }
+
+.about {
+  background-color: #f4f4f4;
+  margin: 2rem auto; }
+
+.nav {
+  height: 5rem;
+  background-color: rgba(4, 49, 189, 0.2);
+  font-size: 130%; }
+  .nav__list {
+    display: flex;
+    justify-content: center;
+    list-style: none; }
+    .nav__list-item {
+      background-color: transparent;
+      padding: 0.5rem;
+      font-size: 200%;
+      margin: 0 1rem; }
+      .nav__list-item-link {
+        text-decoration: none;
+        transition: all .2s; }
+        .nav__list-item-link:link, .nav__list-item-link:visited {
+          color: #f9f7f6; }
+        .nav__list-item-link:active, .nav__list-item-link:hover {
+          color: #d7d7d7; }
+
+.footer {
+  background-color: #222;
+  height: 9.5rem; }
+  @media only screen and (max-width: 50em) {
+    .footer {
+      height: 18rem; } }
+  .footer__ad {
+    display: flex;
+    justify-content: center;
+    text-decoration: none; }
+    .footer__ad--icon {
+      display: flex;
+      list-style: none; }
+      @media only screen and (max-width: 50em) {
+        .footer__ad--icon {
+          display: flex;
+          flex-direction: column; } }
+      .footer__ad--icon-link {
+        text-decoration: none;
+        transition: all .3s; }
+        .footer__ad--icon-link-0:link, .footer__ad--icon-link-0:visited {
+          color: #fff; }
+        .footer__ad--icon-link-0:active, .footer__ad--icon-link-0:hover {
+          color: #fccc63; }
+        .footer__ad--icon-link-1:link, .footer__ad--icon-link-1:visited {
+          color: #fff; }
+        .footer__ad--icon-link-1:active, .footer__ad--icon-link-1:hover {
+          color: #0431bd; }
+        .footer__ad--icon-link-2:link, .footer__ad--icon-link-2:visited {
+          color: #fff; }
+        .footer__ad--icon-link-2:active, .footer__ad--icon-link-2:hover {
+          color: #999c9d; }
+  .footer__text {
+    margin: auto 8rem;
+    padding-top: 2rem; }
+  .footer__copy {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem; }
+    @media only screen and (max-width: 28.25em) {
+      .footer__copy {
+        font-size: 90%; } }

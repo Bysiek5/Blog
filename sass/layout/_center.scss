@@ -1,0 +1,16 @@
+.welcome {
+    
+    &__section {
+        background-image: url(../../img/tlo.jpg);
+        background-size: cover;
+        height: 100vh;
+    }
+}
+
+.about {
+    background-color: $color-primary;
+    margin: 2rem auto;
+    &__us {
+        
+    }
+}
