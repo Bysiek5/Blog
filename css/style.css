@@ -182,3 +182,17 @@ body {
 
 .cairns__section {
   height: 100vh; }
+
+.photos {
+  margin: 0; }
+  .photos__gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .photos__gallery-pic {
+      height: 20rem;
+      padding: .8rem;
+      transition: all .5s;
+      cursor: pointer; }
+      .photos__gallery-pic:hover {
+        transform: scale(1.8); }
